@@ -1,0 +1,596 @@
+/*
+-------------------------------------------------
+  Theme Name: Template
+  Theme URL: 
+  Author: Aysha
+  Author URL:  
+  Creation Date:
+  Description:A default stylesheet 
+  Version: 1.00
+  Primary use: startup, company, agency portfolio, company portfolio, web agency template, startup portfolio,corporate, business, responsive, bootstrap, html5, clean, modern, creative, landing page, app landing etc.
+
+  ---------------------------------------------------
+  Developed By: Suraiya Aysha
+  Developer URL: http://ayshatech.com/
+
+  ---------------------------------------------------
+
+  --------------------------------------------------
+  Table of Contents
+  --------------------------------------------------
+  1. General CSS
+  2. Typography CSS
+  3. Button CSS
+  4. Navbar CSS
+  25. Responsive CSS
+
+------------------------------------------------ */
+
+
+/*-----------------------------------------------
+            1. General Style
+-------------------------------------------------*/
+
+  * {
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+  }
+
+  body,
+  html {
+      height: 100%;
+      margin: 0;
+  }
+
+body {
+    background: #21252e none repeat scroll;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    color: #f8f8f9;
+    letter-spacing: 0.05em;
+    overflow-x: hidden;
+
+}
+
+p{
+  line-height: 1.75;
+  color: #777c87;
+}
+
+a {
+  color: #101127;
+}
+a:hover {
+}
+/* Theme All Transitions
+------------------------------- */
+a, #mainNav, .theme-button{
+    transition: all .5s ease-in-out;
+}
+
+.slow-transition, .theme-button{
+    transition: all .7s ease-in-out;
+}
+
+  ul li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+  }
+
+  ul {
+      margin: 0;
+      padding: 0;
+  }
+
+  a,
+  a > * {
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: none;
+      color: var(--green-color);
+  }
+
+  img::selection {
+    background: transparent;
+  }
+  .page-link:focus {
+    box-shadow: none;
+  }
+
+  /*----Form Control Reset CSS----*/
+
+.form-control {
+    border-radius: 0;
+    border: none;
+    background-color: #2c303a;
+    height: 50px;
+    color: #777c87;
+}
+  .form-control:focus {
+      background-color: #2c303a;
+      border-color: #2c303a;
+      box-shadow: none;
+  }
+  .form-control::placeholder {
+      color: #a0a3aa;
+  }
+
+/*------------------------------------------
+            2.  Typography
+-------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    color: #f8f8f9;
+}
+
+p{
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+figure {
+    margin: 0 0 0;
+}
+
+/*--------------------------------
+            2.1 Theme Color
+-----------------------------------*/
+:root{
+    --white-color: #fff;
+    --yellow-color: #f4c20d;
+    --black-color: #252121;
+    --text-color: #646464;
+    --border-color: #EDF1F4;
+    --red-color: #e01212;
+    --bg-secondary: #f8f8f8;
+    --green-color: #3cba54;
+    --blue-color: #4885ed;
+    --light-blue: #8ec5fc;
+    --pink-color: #f093fb;
+    --bg-light: #21252e;
+    --bg-dark: #1c1f27;
+}
+
+.color-white,
+ #mainNav .navbar-nav .nav-item .nav-link, #mainNav .navbar-nav .nav-item .nav-link{
+    color: #f8f8f8!important;
+}
+
+.mean-container .mean-nav ul li a:hover, .mean-container a.meanmenu-reveal span, .mean-container .mean-nav ul li a:hover{
+    background: var(--green-color);
+}
+
+/*--------------------------------
+    2.3 Theme padding, margin
+-----------------------------------*/
+section, .section-b-space {
+    padding-bottom: 70px;
+}
+.section-t-space {
+    padding-top: 70px;
+}
+.section-b-40-space {
+    padding-bottom: 40px;
+}
+.section-t-40-space {
+    padding-top: 40px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+/*--------------------------------
+   2.4 Template Default CSS
+-----------------------------------*/
+section{
+    position: relative;
+    z-index: 9;
+}
+.section-overlay{
+    height: 100%;
+    width: 100%;
+}
+/*Flat Icon Default Settings*/
+[class^="flaticon-"]::before, [class*=" flaticon-"]::before, [class^="flaticon-"]::after, [class*=" flaticon-"]::after {
+    margin-left: 0;
+}
+
+/*------------------------------------------
+            2.  Typography
+-------------------------------------------*/
+
+/*--------------------------------------------
+            3. Button Style
+---------------------------------------------*/
+.btn{
+  padding: 0;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+button{
+    background-color: transparent;
+}
+button:focus {
+    outline: 0;
+}
+/*-----Theme Button Style-----*/
+.theme-button {
+    color: #fff !important;
+    background-color: #3cba54;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.7s ease 0s;
+    outline: none;
+    text-transform: capitalize;
+    z-index: 99;
+    padding: 12px 30px 14px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+.theme-button:hover {
+    background-color: #10a52d;
+}
+/*-------------------------------------------
+           4. Navbar Area CSS
+-------------------------------------------*/
+.menu-section-area {
+    padding: 0;
+    z-index: 999;
+}
+.menu-section-area .navbar {
+    padding: 0;
+}
+#mainNav {
+    height: 94px;
+    display: flex !important;
+    transition: all ease .6s;
+}
+#mainNav .navbar-brand {
+    position: relative;
+    top: -3px;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    padding: 0.75em 15px;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: bold;
+    color: #fff;
+}
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+    color: #2c303a;
+}
+#mainNav ul li.nav-item:last-child a.nav-link {
+    padding: 11px 20px 11px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+#mainNav .navbar-nav .nav-item:last-child .nav-link:hover {
+    color: #fff!important;
+}
+#mainNav .navbar-nav .nav-item:not(:last-child) .nav-link.active::after, #mainNav .navbar-nav .nav-item:not(:last-child) .nav-link:hover::after{
+    width: 60%;
+    opacity: 1;
+}
+/*---- Dropdown Menu CSS ----*/
+.dropdown-toggle::after {
+    display: none;
+}
+#mainNav .navbar-nav .nav-item .nav-link > i.fa-angle-down {
+  padding-left: 5px;
+  position: relative;
+  top: 2px;
+}
+#mainNav .navbar-nav ul.dropdown-menu {
+  background-color: #2c303a;
+  width: 230px;
+  border: none;
+}
+#mainNav .navbar-nav ul.dropdown-menu li {
+    background-color: #2c303a;
+}
+#mainNav .navbar-nav .dropdown-menu a {
+    color: #fff;
+    padding: 8px 10px 8px 12px;
+    border-top: 1px solid #343c50;
+    display: flex;
+}
+#mainNav .navbar-nav .dropdown-menu a:hover {
+    color: #fff;
+}
+ /* Mean Menu / Mobile Menu Style */
+ /*Custom Scrollbar*/
+/* Works on Firefox */
+.mean-nav *{
+   scrollbar-width: thin;
+   scrollbar-color: var(--green-color) rgba(255,255,255,.1);
+}
+/* Works on Chrome, Edge, and Safari */
+.mean-nav *::-webkit-scrollbar {
+    width: 8px;
+}
+.mean-nav *::-webkit-scrollbar-track {
+    background: rgba(255,255,255,.1);
+}
+.mean-nav *::-webkit-scrollbar-thumb {
+    background-color: var(--green-color);
+    border-radius: 0;
+    border: 0 solid rgba(255,255,255,.1);
+}
+.mobile-menu-wrap {
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 17px;
+    position: relative;
+}
+.mean-container .mean-bar {
+    height: 50px;
+    background-color: #fff;
+    z-index: 999;
+}
+.mean-container .mean-nav {
+    margin-top: 0;
+    height: 100%;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+    padding: 0 !important;
+    margin-top: 3px;
+    top: -2px;
+    background: rgba(255,255,255,.1);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-logo {
+    position: relative;
+    top: 8px;
+    left: 16px;
+}
+.mean-container a.meanmenu-reveal {
+    top: 5px;
+}
+.mean-container .mean-nav ul {
+    margin: 1px 0 0 0;
+    background-color: #2c303a;
+}
+.mean-container .mean-nav ul.nav.navbar-nav.navbar-right.menu{
+    position: relative;
+    top: 0;
+}
+.mean-container .mean-nav ul li a {
+    color: #fff;
+}
+.mean-container .mean-nav ul li.mean-last {
+    border-top: 1px solid rgba(0, 0, 0, .4);
+}
+.mean-container .mean-nav ul li.mean-last a {
+    width: 94px;
+    text-align: center;
+    padding: 12px 20px;
+    margin: 10px 0 10px 15px;
+    font-size: 12px;
+}
+#mainNav {
+    background: #2c303a;
+    padding: 23px 20px 23px 10px;
+}
+#mainNav.navbar-shrink {
+    background: #2c303a;
+}
+#mainNav .navbar-nav .dropdown-menu a:hover{
+    background-color: var(--green-color);
+}
+
+/*-------------------------------------------
+            6. Preloader Area Start
+-------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+}
+#status {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+     background-image: url('../img/preloader-2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+/*-------------------------------------------
+            6. Preloader Area End
+-------------------------------------------*/
+
+
+
+/*-------------------------------------------
+    25. Responsive Design CSS
+-------------------------------------------*/
+
+/*=====================================
+    Extra Large Screen
+========================================*/
+
+  @media only screen and (min-width: 1920px){
+  }
+
+/*=====================================
+    For Large Screen
+========================================*/
+
+  /*------Max 1200px Width Screen------*/
+
+  @media only screen and (max-width: 1775px) {
+
+  }
+
+/*--------Max 1680px Width Screen---------*/
+@media only screen and (max-width: 1680px) {
+}
+
+/*--------Max 1366px Width Screen---------*/
+
+@media only screen and (max-width: 1366px) {
+
+    /*Default for Max 1366px Width Devices*/
+    body {
+        font-size: 14px;
+    }
+    #mainNav .navbar-nav .dropdown-menu a {
+        font-size: 14px;
+    }
+}
+
+
+/*--------Max 1200px Width Screen---------*/
+
+  @media only screen and (max-width: 1200px) {
+      /*============= Home 3 Responsive CSS ==============*/
+
+  }
+
+/*--------Min 1200px Width Screen--------*/
+  @media only screen and (min-width: 1200px) {
+
+  }
+
+/*=====================================
+    For Medium Screen
+========================================*/
+
+@media only screen and (max-width: 1199px){
+}
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px){
+
+      /*Main Menu Bar*/
+      .mobile_menu{
+          display: none!important;
+      }
+      #mainNav .navbar-nav .nav-item .nav-link {
+          font-size: 15px;
+      }
+      #mainNav ul li.nav-item:last-child a.nav-link {
+          padding: 8px 30px 12px;
+      }
+  }
+
+/*======================================
+        Tablet layout
+=========================================*/
+
+  @media only screen and (max-width: 992px) {
+
+  }
+
+  @media only screen and (max-width: 991px) {
+
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+
+      section {
+          padding: 50px 0;
+      }
+    
+      /*Main Menu Bar*/
+      #mainNav{
+          display: none!important;
+      }
+
+  }
+
+  @media only screen and  (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 768px) {
+    /*Main Menu Bar*/
+    #mainNav {
+        display: none !important;
+    }
+
+}
+
+/*=======================================
+        For Small Devices
+=========================================*/
+  @media only screen and (max-width: 767px) {
+
+      section {
+          padding: 50px 0;
+      }
+  }
+
+  /*========================================
+            For large mobile
+  =========================================*/
+
+@media only screen and (max-width: 766px){
+
+}
+  @media only screen and (min-width: 480px) and (max-width: 766px){
+  }
+
+@media only screen and (max-width:575px){
+
+}
+@media only screen and (max-width:480px){
+
+}
+
+/*=========================================
+        For very little mobile
+=========================================*/
+  @media only screen and (max-width:430px){
+
+  }
+  @media only screen and (min-width:300px) and (max-width:479px){
+    /*Header Area*/
+      .theme-button {
+          font-size: 13px;
+      }
+  }
+  /*-------------------------------------------
+        24. Responsive Design End
+  -------------------------------------------*/
